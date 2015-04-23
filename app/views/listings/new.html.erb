@@ -2,15 +2,56 @@
 <%= link_to "Back to Listings", listings_url %>
 <%= form_for @listing do |f| %>
   <p>
-    <%= f.label :address %><br>
+    <%= f.label :Listing_Address %><br>
     <%= f.text_field :address %>
   </p>
   <p>
-    <%= f.label :agent %><br>
+    <%= f.label :agent_name %><br>
     <%= f.text_field :agent %>
   </p>
+
+    <p>
+    <%= f.label :agent_website %><br>
+    <%= f.text_field :website %>
+  </p>
+
+    <p>
+    <%= f.label :agent_email %><br>
+    <%= f.text_field :email %>
+  </p>
+
+    <p>
+    <%= f.label :agent_phone_number %><br>
+    <%= f.text_field :number %>
+  </p>
+
+    <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </p>
+
   <p>
-    <%= f.label :url %><br>
+    <%= f.label :bathrooms %><br>
+    <%= f.text_field :bathrooms %>
+  </p>
+
+	  <p>
+    <%= f.label :bedrooms %><br>
+    <%= f.text_field :bedrooms %>
+  </p>
+
+    <p>
+    <%= f.label :square_feet %><br>
+    <%= f.text_field :sqft %>
+  </p>
+
+    <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <%= f.label :image_url %><br>
     <%= f.text_field :url %>
   </p>
   <p>

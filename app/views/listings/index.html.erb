@@ -1,9 +1,10 @@
 <h1>Listings</h1>
-<%= link_to "New Listing", "/listings/new" %>
-
+<div class="menu-nav">
+<%= link_to "Create New Listing", "/listings/new" %>
+</div>
 <% @listings.each do |listing| %>
+<p><%= listing.address %> // <%= listing.price %> // <%= listing.agent %></p>
  <p><%= link_to image_tag(listing.url), "/listings/#{listing.id}" %></p>
-	 <p><%= listing.address %> // <%= listing.price %> // <%= listing.agent %></p>
 	 <p>Bedrooms: <%= listing.bedrooms %></p>
 	 <p>Bathrooms: <%= listing.bathrooms %></p>
 	 <p>Square Footage: <%= listing.sqft %></p>

@@ -1,1 +1,7 @@
 <h1>Listings</h1>
+
+<% @listings.each do |listing| %>
+	 <p><%= listing.address %> // <%= listing.agent %></p>
+	 <img src="<%= listing.url %>">
+
+	 <% end %>

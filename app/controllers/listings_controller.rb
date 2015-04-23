@@ -12,16 +12,31 @@ class ListingsController < ApplicationController
 	end
 
 	 def create
-    # make a new picture with what picture_params returns (which is a method we're calling)
+    # make a new listing with what listing_params returns (which is a method we're calling)
     @listing = Listing.new(listing_params)
     if @listing.save
-      # if the save for the picture was successful, go to index.html.erb
+      # if the save for the listing was successful, go to index.html.erb
       redirect_to listings_url
     else
       # otherwise render the view associated with the action :new (i.e. new.html.erb)
       render :new
     end
   end
+
+  def edit
+  	@listing = Listing.find(params[:id])
+  end
+
+  def update
+    @listing = Listing.find(params[:id])
+
+    if @listing.update_attributes(listing_params)
+      redirect_to "/listings/#{@listing.id}"
+    else
+      render :edit
+    end
+  end
+
 
   private
   def listing_params

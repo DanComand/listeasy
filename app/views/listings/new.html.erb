@@ -1,6 +1,10 @@
 <h1>Create New Listing</h1>
+<div class="forms">
+
 <%= link_to "Back to Listings", listings_url %>
 <%= form_for @listing do |f| %>
+  
+
   <p>
     <%= f.label :Listing_Address %><br>
     <%= f.text_field :address %>
@@ -50,11 +54,15 @@
     <%= f.text_field :description %>
   </p>
 
-  <p>
-    <%= f.label :image_url %><br>
-    <%= f.text_field :url %>
+   <p>
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
   </p>
+  
+
+
   <p>
     <%= f.submit "Save" %>
   </p>
+  </div>
 <% end %>

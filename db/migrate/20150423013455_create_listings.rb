@@ -11,7 +11,7 @@ class CreateListings < ActiveRecord::Migration
       t.string :website
       t.string :email
       t.string :number
-      t.string :url
+      t.string :image
 
       t.timestamps null: false
     end

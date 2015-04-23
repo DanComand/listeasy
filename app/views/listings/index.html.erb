@@ -1,19 +1,29 @@
+<!-- <div class="main-title">
+
+Welcome to ListEasy
+
+</div> -->
+
 <h1>Listings</h1>
-<div class="menu-nav">
+<!-- <div class="menu-nav"> -->
+<div class="title-info">
 <%= link_to "Create New Listing", "/listings/new" %>
 </div>
 <% @listings.each do |listing| %>
-<p><%= listing.address %> // <%= listing.price %> // <%= listing.agent %></p>
- <p><%= link_to image_tag(listing.url), "/listings/#{listing.id}" %></p>
+<div class="title-info">
+<p><%= listing.address %> | <%= listing.price %> | <%= listing.agent %></p>
+ <p><%= link_to image_tag(listing.image.url), "/listings/#{listing.id}" %></p>
+</div>
+<div class="listing-info">
 	 <p>Bedrooms: <%= listing.bedrooms %></p>
 	 <p>Bathrooms: <%= listing.bathrooms %></p>
 	 <p>Square Footage: <%= listing.sqft %></p>
 	 <p>Description: <%= listing.description %></p>
 	 <p>Agent: <%= listing.agent %></p>
 	 <p>Email: <%= listing.email %></p>
+	 <p>Website: <%= listing.website %></p>
 	 <p>Contact: <%= listing.number %></p>
-
-
+</div>
 
 
 	 <% end %>

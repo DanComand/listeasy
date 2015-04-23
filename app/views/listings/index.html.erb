@@ -1,7 +1,16 @@
 <h1>Listings</h1>
 
 <% @listings.each do |listing| %>
-	 <p><%= listing.address %> // <%= listing.agent %></p>
-	 <img src="<%= listing.url %>">
+	 <p><%= listing.address %> // <%= listing.price %> // <%= listing.agent %></p>
+	 <p>Bedrooms: <%= listing.bedrooms %></p>
+	 <p>Bathrooms: <%= listing.bathrooms %></p>
+	 <p>Square Footage: <%= listing.sqft %></p>
+	 <p>Description: <%= listing.description %></p>
+	 <p>Agent: <%= listing.agent %></p>
+	 <p>Email: <%= listing.email %></p>
+	 <p>Contact: <%= listing.number %></p>
+
+
+	 <p><img src="<%= listing.url %>"></p>
 
 	 <% end %>

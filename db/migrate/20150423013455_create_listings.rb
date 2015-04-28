@@ -12,6 +12,7 @@ class CreateListings < ActiveRecord::Migration
       t.string :email
       t.string :number
       t.string :image
+      
 
       t.timestamps null: false
     end

@@ -1,19 +1,30 @@
-
-
-
-
-
-
-<div class="title-info">
+<!-- <div class="title-info">
 <%= link_to "Back to Listings", listings_url %> | <%= link_to "Edit", edit_listing_path(@listing) %> | <%= link_to "Delete", @listing, method: :delete, data: {confirm: "Are you sure you want to delete this listing?"}  %>
 
 
-<div class="listing-content-bg">
-<p><%= @listing.address %> | <%= @listing.price %> | <%= @listing.agent %></p>
+ -->
+
+<!-- ABOVE NEEDS TO BE MOVED TO HEADER! -->
+
+<div class="address">
+	<p><%= @listing.address %></p>
 </div>
+<div class="price-agent">
+	<p>$<%= @listing.price %> | <%= @listing.agent %></p>
 </div>
 
-<img src="<%= @listing.image.url %>">
+
+<div class="image-duo">
+<img src="<%= @listing.image.url %>" align="middle"><img class="img2" src="<%= @listing.image.url %>" align="middle">
+</div>
+
+<div class="image-duo">
+<img src="<%= @listing.image.url %>" align="middle"><img class="img2" src="<%= @listing.image.url %>" align="middle">
+</div>
+
+
+
+<br>
 <div class="listing-info">
 	 <p>Bedrooms: <%= @listing.bedrooms %></p>
 	 <p>Bathrooms: <%= @listing.bathrooms %></p>

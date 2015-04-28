@@ -118,11 +118,36 @@ a:hover {
 
 img {
 
-	width: 50%;
-	height: 50%;
-	float: right;
-	border: 10px solid rgba(0, 0, 0, .75);
-	margin-right: 60px;
+	width: 45%;
+	height: 45%;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	
+	/*border: 10px solid rgba(0, 0, 0, .75);*/
+
+
+}
+
+.img2 {
+
+	width: 45%;
+	height: 45%;
+
+	padding-right: 40px;
+	
+	/*border: 10px solid rgba(0, 0, 0, .75);*/
+
+
+}
+
+.image-duo {
+
+
+
+
+
+
+
 
 }
 
@@ -179,11 +204,25 @@ textarea, input {
 
 }
 
+.address {
+
+font-size: 100px;
+font-weight: 100;
+text-align: center;
+
+line-height: 0px;
+}
+
+.price-agent {
 
 
+font-size: 50px;
+font-weight: 100;
+text-align: center;
+line-height: 0px;
+padding-bottom: 50px;
 
-
-
+}
 
 
 

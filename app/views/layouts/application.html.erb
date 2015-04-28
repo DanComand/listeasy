@@ -15,7 +15,17 @@ Easylist<span class="h-subtitle">Create A New Listing</span>
 </header>
 <div class="page-container">
 
+  <body>
+    <% if flash[:notice] %>
+      <p id="notice"><%= flash[:notice] %></p>
+    <% end %>
+    <% if flash[:alert] %>
+      <p id="alert"><%= flash[:alert] %></p>
+    <% end %>
 
+    <%= yield %>
+
+</html>
 <%= yield %>
 
 </div>

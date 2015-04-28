@@ -39,6 +39,7 @@ header {
 	padding-top: 8px;
 
 
+
 }
 
 .h-subtitle {
@@ -73,6 +74,7 @@ h1 {
 	font-weight: 300;
 font-family: Helvetica;
 
+
 }
 
 .main-title {
@@ -80,6 +82,7 @@ font-family: Helvetica;
 	font-size: 50px;
 	text-align: center;
 	font-weight: 300;
+
 }
 
 .menu-nav {
@@ -212,7 +215,7 @@ textarea, input {
 font-size: 100px;
 font-weight: 100;
 text-align: center;
-
+text-decoration: overline;
 line-height: 0px;
 }
 

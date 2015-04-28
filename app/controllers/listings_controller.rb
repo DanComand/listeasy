@@ -51,7 +51,22 @@ class ListingsController < ApplicationController
     # binding.pry
     params.require(:listing).permit(:address, :city, :agent, 
       :bedrooms, :bathrooms, :price, :sqft, 
-      :description, :agent, :website, :email, :number, :image, :image2)
+      :description, :agent, :website, :email, :number, :image, :image2, :image3,
+      :image4, :image5, :image6)
   end
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
